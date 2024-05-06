@@ -1,7 +1,11 @@
 {
-  "name": "",
+  "name": "jonathan-bristow-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jonathan Bristow",
+    "email": "jonathanbristow@me.com"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
