@@ -2,6 +2,7 @@
   "name": "jonathan-bristow-website",
   "type": "module",
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "author": {
     "name": "Jonathan Bristow",
     "email": "jonathanbristow@me.com"
@@ -14,8 +15,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.7.1",
     "@astrojs/check": "^0.5.10",
+    "@astrojs/preact": "^3.2.0",
+    "astro": "^4.7.1",
+    "preact": "^10.21.0",
+    "sharp": "^0.33.3",
     "typescript": "^5.4.5"
-  }
+  },
+  "trustedDependencies": [
+    "sharp"
+  ]
 }

@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import profile from "../images/profile.png";
+
+interface Props {
+  fullSize: boolean;
+}
+
+const { fullSize } = Astro.props;
+---
+
+<header>
+  <Image
+    src={profile}
+    alt="Profile Picture"
+    width="70"
+    height="70"
+    class={"profile"}
+  />
+  <h1>Jonathan Bristow</h1>
+  {
+    fullSize && (
+      <p>
+        I'm a <strong>Software Engineer</strong> based in the{" "}
+        <strong>south of England</strong>.<br />
+        Currently working as a{" "}
+        <strong>Senior Software Engineering Manager</strong>.
+      </p>
+    )
+  }
+</header>
+
+<style>
+  .profile {
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    margin: 0 0 1rem;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #bebebe;
+  }
+  strong {
+    font-weight: 500;
+    color: white;
+  }
+</style>
