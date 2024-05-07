@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  image: any;
+  text: string;
+}
+
+const { text, image } = Astro.props;
+---
+
+<div class="tile">
+  <Image
+    src={image}
+    alt={text}
+    class={"tile-image"}
+  />
+  <h3>{text}</h3>
+</div>
+
+<style>
+  .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient(circle at 37% 26%, rgba(0,0,0,0.00) 0%, #000000 70%);
+    box-shadow: 5px 5px 0 0 rgba(255,255,255,0.1);
+    border-radius: 5px;
+    padding: 1em;
+    
+    h3 {
+      font-size: 1em;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+    }
+    .tile-image {
+      width: 54px;
+      height: auto;
+      margin: 0 0 1.2em;
+    }
+  }
+</style>
