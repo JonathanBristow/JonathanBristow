@@ -2,30 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Content from "../layouts/Content.astro";
 import Header from "../components/Header.astro";
-// import Tile from "../components/Tile.astro";
-
-// import Entrepreneur from "../images/entrepreneur.png";
-// import SoftwareDevelopmer from "../images/developer.png";
-// import WebDesign from "../images/webdesigner.png";
 ---
 
 <Layout title="Jonathan Bristow">
   <Header fullSize={true} />
   <Content>
-    <!-- <div class="tiles">
-      <Tile image={SoftwareDevelopmer} text="Software Development" />
-      <Tile image={WebDesign} text="Web Design" />
-      <Tile image={Entrepreneur} text="Entrepreneur" />
-    </div> -->
   </Content>
 </Layout>
 
 <style>
-  .tiles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 12px;
-    grid-row-gap: 0px;
-  }
 </style>
